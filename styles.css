@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+  font-size: 100%;
+}
+:root{
+  --bg-color-left: #191919;
+  --bg-color-right:#ffffff;
+  --game-changer: #66fcf1;
+  --btc: #ffffff;
+  --paragraph-color: #c5c6c7;
+}
+#wrapper{
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url('photo-creation-station-images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#container{
+  width: 90%;
+  height: 90vh;
+  margin: 3vh auto;
+  margin-bottom: 0;
+}
+/*------------------------------------------------------------------------------*/
+/*nav section*/
+nav{
+  width: 100%;
+  height: 10vh;
+  line-height: 10vh;
+  background-color: #191919;
+  color: var(--game-changer);
+}
+#logo{
+  font-size: 150%;
+  font-weight: bolder;
+  margin-left: 2em;
+}
+nav #nav-menu{
+  float: right;
+  width: 60%;
+  height: inherit;
+}
+#nav-menu ul{
+  list-style-type: none;
+}
+#nav-menu li{
+  width: 15.6%;
+  float: left;
+  text-align: center;
+  margin-right: .5%; margin-left: .5%;
+}
+#nav-menu li a{
+  display: block;
+  text-decoration: none;
+  color: var(--game-changer);
+  text-transform: uppercase;
+}
+/*end of nav section*/
+/*------------------------------------------------------------------------------*/
+/*section a and b general rules*/
+#section-a, #side-bar{
+  height: 80vh;
+  overflow-x: hidden;
+}
+#section-a{
+  width: 45%;
+  float: left;
+  background-color: var(--bg-color-left);
+}
+#section-b{
+  width: 55%;
+  height: auto;
+  float: right;
+  background-color: var(--bg-color-right);
+}
+/*end of section a and b general rules*/
+/*------------------------------------------------------------------------------*/
+/* side bar menu*/
+#side-bar{
+  width: 5%;
+  float: right;
+  background-color: transparent;
+  position: relative;
+  background-color: #c5c6c7;
+  display: grid;
+}
+#sidebar-nav{
+  position: absolute;
+  justify-self: center;
+  align-self: center;
+}
+.sidebar-menu{
+  display: block;
+  font-size: 1em;
+  margin-bottom: .7em;
+  color: var(--game-changer);
+  padding: .2em;
+  background-color: #191919;
+  border: 1px solid #191919;
+  border-radius: 50%;
+}
+/* end of side bar menu*/
+/*------------------------------------------------------------------------------*/
+/*SECTION A*/
+
+/*Home section a*/
+/*End of Home section a*/
+
+/*END OF SECTION A*/
+/*------------------------------------------------------------------------------*/
+/*SECTION B*/
+/*END OF SECTION B*/
+/*------------------------------------------------------------------------------*/
+/* footer*/
+#footer{
+  width: 90%;
+  height: 6vh;
+  line-height: 6vh;
+  margin: .5vh auto;
+  background-color:transparent;
+  color: var(--game-changer);
+}
+.socials{
+  font-size: 1.3em;
+  margin-right: .8em;
+}
+#footer-text{
+  width: 50%;
+  float: right;
+  text-align: right;
+  font-size: 110%;
+  font-weight: bolder;
+}
+#footer a{color: var(--game-changer);}
+/* end of footer*/
+/*------------------------------------------------------------------------------*/
+/* strategy css*/
+#wrapper{
+  display: grid;
+}
+#nav-menu li a:hover, .sidebar-menu:hover, .socials:hover{
+  color: #ffffff;
+}
+/*end of strategy css*/
+/*------------------------------------------------------------------------------*/
