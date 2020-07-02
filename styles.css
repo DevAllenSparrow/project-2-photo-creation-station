@@ -7,6 +7,20 @@
 }
 body{
   font-size: 100%;
+  font-size: 110%;
+}
+h2, h3, h4{
+  margin-top: .2em;
+  margin-bottom: .2em;
+}
+h2{
+  color: var(--game-changer);
+  font-size: 170%;
+}
+h3, h4{color: #fff;}
+h4{font-size: 90%;}
+p{
+  color: var(--paragraph-color);
 }
 :root{
   --bg-color-left: #191919;
@@ -24,11 +38,16 @@ body{
   background-repeat: no-repeat;
   background-size: cover;
 }
-#container{
+#wrapper-container{
   width: 90%;
   height: 90vh;
   margin: 3vh auto;
   margin-bottom: 0;
+}
+#container{
+  width: 95%;
+  height: 90vh; 
+  float: left;
 }
 /*------------------------------------------------------------------------------*/
 /*nav section*/
@@ -42,7 +61,8 @@ nav{
 #logo{
   font-size: 150%;
   font-weight: bolder;
-  margin-left: 2em;
+  margin-left: .5em;text-shadow: 1px 1px 2px white;
+
 }
 nav #nav-menu{
   float: right;
@@ -63,11 +83,12 @@ nav #nav-menu{
   text-decoration: none;
   color: var(--game-changer);
   text-transform: uppercase;
+  font-size: 80%;
 }
 /*end of nav section*/
 /*------------------------------------------------------------------------------*/
 /*section a and b general rules*/
-#section-a, #side-bar{
+#section-a, #section-b{
   height: 80vh;
   overflow-x: hidden;
 }
@@ -75,10 +96,12 @@ nav #nav-menu{
   width: 45%;
   float: left;
   background-color: var(--bg-color-left);
+  padding-left: .5em;
+  padding-right: .5em;
 }
 #section-b{
   width: 55%;
-  height: auto;
+  overflow-y: scroll;
   float: right;
   background-color: var(--bg-color-right);
 }
@@ -87,33 +110,58 @@ nav #nav-menu{
 /* side bar menu*/
 #side-bar{
   width: 5%;
+  height: 90vh;
   float: right;
   background-color: transparent;
-  position: relative;
-  background-color: #c5c6c7;
-  display: grid;
-}
-#sidebar-nav{
-  position: absolute;
-  justify-self: center;
-  align-self: center;
+  display: grid; 
 }
 .sidebar-menu{
   display: block;
   font-size: 1em;
   margin-bottom: .7em;
   color: var(--game-changer);
-  padding: .2em;
+  padding: .3em;
   background-color: #191919;
   border: 1px solid #191919;
-  border-radius: 50%;
+  border-radius: 50%; 
 }
 /* end of side bar menu*/
 /*------------------------------------------------------------------------------*/
 /*SECTION A*/
 
-/*Home section a*/
-/*End of Home section a*/
+/*Home section a and b*/
+.home-img{
+  background-image: url('photo-creation-station-images/home image.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.underline, #section-a-content p{margin-bottom: 1em;}
+a.btn{
+  text-decoration: none;
+  background-color: #fff;
+  color: #191919;
+  padding: .3em .7em;
+  border-radius: 26px;
+  text-transform: uppercase;
+}
+a.button{
+  background-color: #66fcf1;
+}
+.underline{
+  position: relative;
+  display: inline-block;
+}
+.underline::after{
+  content: '';
+  height: 2px;
+  width: 30%;
+  background-color: #66fcf1;
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 15%);
+}
+/*End of Home section a and b*/
 
 /*END OF SECTION A*/
 /*------------------------------------------------------------------------------*/
@@ -122,33 +170,37 @@ nav #nav-menu{
 /*------------------------------------------------------------------------------*/
 /* footer*/
 #footer{
-  width: 90%;
-  height: 6vh;
-  line-height: 6vh;
-  margin: .5vh auto;
+  clear: both;
+  width: 100%;
+  height: 7vh;
+  line-height: 7vh;
   background-color:transparent;
   color: var(--game-changer);
 }
 .socials{
-  font-size: 1.3em;
+  font-size: 1.2em;
   margin-right: .8em;
 }
 #footer-text{
   width: 50%;
   float: right;
   text-align: right;
-  font-size: 110%;
+  font-size: 90%;
   font-weight: bolder;
 }
-#footer a{color: var(--game-changer);}
+#footer a, #footer-text{color: var(--game-changer);}
 /* end of footer*/
 /*------------------------------------------------------------------------------*/
 /* strategy css*/
-#wrapper{
+#wrapper, #section-a{
   display: grid;
 }
 #nav-menu li a:hover, .sidebar-menu:hover, .socials:hover{
   color: #ffffff;
+}
+#sidebar-nav, #section-a-content{
+  justify-self: center;
+  align-self: center;
 }
 /*end of strategy css*/
 /*------------------------------------------------------------------------------*/
