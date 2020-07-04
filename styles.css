@@ -18,7 +18,7 @@ h2{
   font-size: 170%;
 }
 h3, h4{color: #fff;}
-h4{font-size: 90%;}
+h4{font-size: 100%;}
 p{
   color: var(--paragraph-color);
 }
@@ -41,8 +41,6 @@ p{
 #wrapper-container{
   width: 90%;
   height: 90vh;
-  margin: 3vh auto;
-  margin-bottom: 0;
 }
 #container{
   width: 95%;
@@ -62,8 +60,8 @@ nav{
   font-size: 150%;
   font-weight: bolder;
   margin-left: .5em;text-shadow: 1px 1px 2px white;
-
 }
+#hamburger{display: none;}
 nav #nav-menu{
   float: right;
   width: 60%;
@@ -89,7 +87,7 @@ nav #nav-menu{
 /*------------------------------------------------------------------------------*/
 /*section a and b general rules*/
 #section-a, #section-b{
-  height: 80vh;
+  height: 74vh;
   overflow-x: hidden;
 }
 #section-a{
@@ -103,7 +101,9 @@ nav #nav-menu{
   width: 55%;
   overflow-y: scroll;
   float: right;
-  background-color: var(--bg-color-right);
+  background-color: var(--paragraph-color);
+  padding-left: .5em;
+  padding-right: .5em;
 }
 /*end of section a and b general rules*/
 /*------------------------------------------------------------------------------*/
@@ -112,8 +112,7 @@ nav #nav-menu{
   width: 5%;
   height: 90vh;
   float: right;
-  background-color: transparent;
-  display: grid; 
+  background-color: transparent; 
 }
 .sidebar-menu{
   display: block;
@@ -168,12 +167,114 @@ a.button{
 /*SECTION B*/
 /*END OF SECTION B*/
 /*------------------------------------------------------------------------------*/
+/*about section*/
+#about-image-one{
+  grid-column: 1/3;
+  grid-row: 1/3;
+}
+#about-image-two{
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#about-image-three{
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+blockquote{
+  padding: 2em;
+  text-align: center;
+}
+/*end of about section*/
+/*------------------------------------------------------------------------------*/
+/*services section*/
+.service-card{background-color: #191919;}
+.service-card-content{
+  text-align: center;
+}
+.service-card-content ion-icon{
+  color: #66fcf1;
+  font-size: 1.5em;
+}
+/*end of services section*/
+/*------------------------------------------------------------------------------*/
+/*team section*/
+.team-cards{position: relative;}
+.team-member-details{
+  text-align: center;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+.team-member-details p, .team-member-details h3
+{
+  color: #191919;
+  font-weight: bolder;
+}
+.team-color-overlay{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--game-changer);
+  opacity: .8;
+  z-index: 1;
+  display: none;
+}
+.tmd{display: none;}
+.team-cards:hover .team-color-overlay,
+.team-cards:hover .team-member-details,
+.team-cards:hover .tmd
+{
+  display: grid;
+}
+/*end of team section*/
+/*------------------------------------------------------------------------------*/
+/*portfolio section*/
+#portfolio-section{
+  background-image: url('photo-creation-station-images/portfolio\ section\ background.jpg');
+  background-attachment: fixed;
+}
+/*end of portfolio section*/
+/*------------------------------------------------------------------------------*/
+/*contact section*/
+.contact-background{
+  background-image: url('photo-creation-station-images/c-background.jpg');
+}
+#form-section{width: 60%;}
+#theForm{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: .5em;
+}
+.row, .row input, .row textarea{
+  width: 100%;
+  text-align: left;
+}
+.row input, .row textarea{
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 25px;
+}
+.row input[type="submit"]{
+  text-align: center;
+  font-weight: bolder;
+  background-color: var(--game-changer);
+}
+.row input[type="submit"]:hover{cursor: pointer;}
+/*end of contact section*/
+/*------------------------------------------------------------------------------*/
 /* footer*/
 #footer{
   clear: both;
   width: 100%;
-  height: 7vh;
-  line-height: 7vh;
+  height: 6vh;
+  line-height: 6vh;
   background-color:transparent;
   color: var(--game-changer);
 }
@@ -192,15 +293,30 @@ a.button{
 /* end of footer*/
 /*------------------------------------------------------------------------------*/
 /* strategy css*/
-#wrapper, #section-a{
+#wrapper, #side-bar, #section-a, #section-b, #about-section, #services-section,
+.service-card, #team-section, .team-cards, .team-member-details, #portfolio-section
+{
   display: grid;
 }
 #nav-menu li a:hover, .sidebar-menu:hover, .socials:hover{
   color: #ffffff;
 }
-#sidebar-nav, #section-a-content{
+#wrapper-container, #sidebar-nav, #section-a-content, .service-card-content, .tmd,
+#form-section
+{
   justify-self: center;
   align-self: center;
 }
+#about-section, #services-section, #team-section, #portfolio-section{
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(23vh, auto);
+}
+.about-images img, .team-cards img, .photo-creations img, .illustrations img
+{
+  width: 100%;
+  max-width: 100%;
+}
+#services-section, #team-section, #portfolio-section
+{grid-gap: .9em;}
 /*end of strategy css*/
 /*------------------------------------------------------------------------------*/
