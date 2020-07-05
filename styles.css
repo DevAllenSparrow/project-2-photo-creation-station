@@ -7,7 +7,6 @@
 }
 body{
   font-size: 100%;
-  font-size: 110%;
 }
 h2, h3, h4{
   margin-top: .2em;
@@ -47,6 +46,26 @@ p{
   height: 90vh; 
   float: left;
 }
+#btp-wrap{
+  position: relative;
+  width: 100%;
+  height: auto;
+  background-color:transparent;
+  display: none;
+}
+#btp-wrap a{
+  color: var(--game-changer); 
+}
+#btp-icon{
+  font-size: 2em;
+  padding: .1em;
+  background-color:#191919;
+  border: 3px solid #191919;
+  border-radius: 50%;
+  position: fixed;
+  bottom: .3em;
+  right: .3em;
+}
 /*------------------------------------------------------------------------------*/
 /*nav section*/
 nav{
@@ -61,7 +80,7 @@ nav{
   font-weight: bolder;
   margin-left: .5em;text-shadow: 1px 1px 2px white;
 }
-#hamburger{display: none;}
+#hamburger-holder{display: none;}
 nav #nav-menu{
   float: right;
   width: 60%;
@@ -232,6 +251,7 @@ blockquote{
 {
   display: grid;
 }
+.team-cards img{min-height: 100%;}
 /*end of team section*/
 /*------------------------------------------------------------------------------*/
 /*portfolio section*/
@@ -317,6 +337,25 @@ blockquote{
   max-width: 100%;
 }
 #services-section, #team-section, #portfolio-section
-{grid-gap: .9em;}
+{grid-gap: .8em;}
 /*end of strategy css*/
 /*------------------------------------------------------------------------------*/
+/* media query for rotated max height */
+@media (max-height: 450px){
+  #container{
+    height: 90vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  #section-a{
+    padding: .5em;
+  }
+  a.btn{
+    padding: .1em .4em;
+    display: inline-block;
+    margin-bottom: 1em;
+  }
+  #footer{
+    display: none;
+  }
+}

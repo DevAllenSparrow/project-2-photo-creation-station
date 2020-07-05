@@ -1,0 +1,315 @@
+/* LAPTOP LARGE */
+@media(max-width: 1100px) and (min-width: 980px){
+  #logo{font-size: 130%;}
+}
+/* END OF LAPTOP LARGE */
+/*------------------------------------------------------------------------------*/
+/* LAPTOP */
+@media(max-width: 979px) and (min-width: 851px){
+  #logo{
+    font-size: 130%;
+  }
+  nav{line-height: 10vh;}
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+  }
+  #services-section{grid-gap: .5em;}
+  #footer-text{
+    width: 60%;
+  }
+}
+/* END OF LAPTOP */
+/*------------------------------------------------------------------------------*/
+/* LAPTOP M */
+@media(max-width: 850px) and (min-width: 772px){
+  #logo{
+    font-size: 130%;
+  }
+  nav{line-height: 10vh;}
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+  }
+  #services-section{grid-gap: .5em;}
+  #footer-text{
+    width: 60%;
+  }
+  .service-card-content ion-icon{  font-size: 1.3em;}
+  #footer-text{
+    width: 70%;
+  }
+}
+/* END OF LAPTOP M */
+/*------------------------------------------------------------------------------*/
+/* TABLET LARGE */
+@media(max-width: 771px) and (min-width: 732px){
+  #container{
+    width: 100%;
+    height: 90vh; 
+    float: none;
+  }
+  #logo{
+    font-size: 130%;
+  }
+  nav{line-height: 10vh;}
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+  }
+  #side-bar{
+    float: none;
+    display: none; 
+  }
+  #services-section{grid-gap: .5em;}
+  #footer-text{
+    width: 60%;
+  }
+  .service-card-content ion-icon{  font-size: 1.3em;}
+  #footer-text{
+    width: 70%;
+  }
+}
+/* END OF TABLET LARGE */
+/*------------------------------------------------------------------------------*/
+/* TABLET MEDIUM */
+@media(max-width: 731px) and (min-width: 626px){
+  #container{
+    width: 100%;
+    height: 90vh; 
+    float: none;
+  }
+  #logo{
+    font-size: 130%;
+  }
+  nav{line-height: 10vh;}
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+  }
+  a.btn{padding: .2em .4em;}
+  #side-bar{
+    float: none;
+    display: none; 
+  }
+  #services-section{grid-gap: .5em;}
+  #footer-text{
+    width: 60%;
+  }
+  .service-card-content ion-icon{  font-size: 1.2em;}
+  .service-card-content h4{
+    margin-top: .1em;
+    margin-bottom: .1em;
+  }
+  #footer-text{
+    width: 70%;
+  }
+  #about-section, #services-section, #team-section, #portfolio-section{
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(23vh, auto);
+  }
+  #about-image-two{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  #about-image-three{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+/* END OF TABLET MEDIUM */
+/*------------------------------------------------------------------------------*/
+/* MINI TABLET */
+@media(max-width: 625px) and (min-width: 500px){
+  #container{
+    width: 100%;
+    height: 90vh; 
+    float: none;
+    overflow-y: scroll;
+  }
+  #logo{
+    font-size: 130%;
+  }
+  nav{line-height: 10vh;}
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+  }
+  a.btn{padding: .3em .7em;}
+  #side-bar{
+    float: none;
+    display: none; 
+  }
+  #section-a, #section-b{
+    width: 100%;
+    float: none;
+  }
+  #section-b{ 
+    overflow-y: scroll;
+  }
+  #services-section{grid-gap: .5em;}
+  
+  .service-card-content ion-icon{  font-size: 1.5em;}
+  .service-card-content h4{
+    margin-top: .1em;
+    margin-bottom: .1em;
+  }
+  .socials, #footer-text{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .socials{width: 29%;}
+  #btp-wrap{display: block;}
+}
+/* END OF MINI TABLET */
+/*------------------------------------------------------------------------------*/
+/* MOBILE LARGE */
+@media(max-width: 499px) and (min-width: 376px){
+  #container{
+    width: 100%;
+    height: 90vh; 
+    float: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  nav{
+    height: 40vh;
+  }
+  #logo{
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 120%;
+    display: inline-block;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+  }
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 35vh;
+  }
+  #nav-menu li{
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-right: 0%; margin-left: 0%;
+    height: 5vh;
+    line-height: 5vh;
+    border: 1px solid white;
+  }
+  a.btn{padding: .3em .7em;}
+  #side-bar{
+    float: none;
+    display: none; 
+  }
+  #section-a, #section-b{
+    width: 100%;
+    float: none;
+  }
+  #section-b{
+    overflow-y: scroll;
+  }
+  #services-section{grid-gap: .5em;}
+  
+  .service-card-content ion-icon{  font-size: 1.5em;}
+  .service-card-content h4{
+    margin-top: .1em;
+    margin-bottom: .1em;
+  }
+  .socials, #footer-text{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .socials{width: 28%;}
+  #btp-wrap{display: block;}
+}
+/* END OF MOBILE LARGE */
+/*------------------------------------------------------------------------------*/
+/* MOBILE */
+@media(max-width: 375px) and (min-width: 0px){
+  #container{
+    width: 100%;
+    height: 90vh; 
+    float: none;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  nav{
+    height: 40vh;
+  }
+  #logo{
+    width: 100%;
+    height: 6vh;
+    line-height: 6vh;
+    font-size: 120%;
+    display: inline-block;
+    text-align: center;
+    /*border: 1px solid yellow;*/
+  }
+  nav #nav-menu{
+    float: none;
+    width: 100%;
+    height: 35vh;
+  }
+  #nav-menu li{
+    width: 100%;
+    float: none;
+    text-align: center;
+    margin-right: 0%; margin-left: 0%;
+    height: 5vh;
+    line-height: 5vh;
+    border: 1px solid white;
+  }
+  a.btn{padding: .3em .7em;}
+  #side-bar{
+    float: none;
+    display: none; 
+  }
+  #section-a, #section-b{
+    width: 100%;
+    float: none;
+  }
+  #section-b{
+    overflow-y: scroll;
+  }
+  #services-section{grid-gap: .5em;}
+  .service-card-content ion-icon{  font-size: 1.5em;}
+  .service-card-content h4{
+    margin-top: .1em;
+    margin-bottom: .1em;
+  }
+  .socials, #footer-text{
+    width: 100%;
+    float: none;
+    text-align: center;
+  }
+  .socials{width: 27%;}
+  #btp-wrap{display: block;}
+  #about-section, #services-section, #team-section, #portfolio-section{
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(23vh, auto);
+  }
+  #about-image-two{
+    grid-column: 1/3;
+    grid-row: 3/4;
+  }
+  #about-image-three{
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+}
+/* END OF MOBILE */
+
