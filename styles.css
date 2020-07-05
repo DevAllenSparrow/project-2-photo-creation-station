@@ -154,6 +154,7 @@ nav #nav-menu{
   background-repeat: no-repeat;
   background-size: cover;
 }
+#himage{display: none;}
 .underline, #section-a-content p{margin-bottom: 1em;}
 a.btn{
   text-decoration: none;

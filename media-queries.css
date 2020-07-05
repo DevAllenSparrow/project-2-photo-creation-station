@@ -155,10 +155,14 @@
     float: none;
   }
   #section-b{ 
-    overflow-y: scroll;
+    height: auto;
+  }
+  #himage{
+    display: block;
+    max-width: 100%;
+    width: 100%;
   }
   #services-section{grid-gap: .5em;}
-  
   .service-card-content ion-icon{  font-size: 1.5em;}
   .service-card-content h4{
     margin-top: .1em;
@@ -207,7 +211,13 @@
     margin-right: 0%; margin-left: 0%;
     height: 5vh;
     line-height: 5vh;
-    border: 1px solid white;
+    border: 1px solid #191919;
+    background-color: #c5c6c7;
+    border-radius: 25px;
+  }
+  #nav-menu li a{
+    color: #191919;
+    font-weight: bolder;
   }
   a.btn{padding: .3em .7em;}
   #side-bar{
@@ -219,10 +229,14 @@
     float: none;
   }
   #section-b{
-    overflow-y: scroll;
+    height: auto;
+  }
+  #himage{
+    display: block;
+    max-width: 100%;
+    width: 100%;
   }
   #services-section{grid-gap: .5em;}
-  
   .service-card-content ion-icon{  font-size: 1.5em;}
   .service-card-content h4{
     margin-top: .1em;
@@ -271,7 +285,13 @@
     margin-right: 0%; margin-left: 0%;
     height: 5vh;
     line-height: 5vh;
-    border: 1px solid white;
+    border: 1px solid #191919;
+    background-color: #c5c6c7;
+    border-radius: 25px;
+  }
+  #nav-menu li a{
+    color: #191919;
+    font-weight: bolder;
   }
   a.btn{padding: .3em .7em;}
   #side-bar{
@@ -282,8 +302,13 @@
     width: 100%;
     float: none;
   }
+  #himage{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+  }
   #section-b{
-    overflow-y: scroll;
+    height: auto;
   }
   #services-section{grid-gap: .5em;}
   .service-card-content ion-icon{  font-size: 1.5em;}
